@@ -78,6 +78,8 @@ jobs:
               mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
               modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
               modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+              // Explicitly include the client world-render event module used by the snow mesh renderer.
+              modImplementation "net.fabricmc.fabric-api:fabric-rendering-v1:16.2.2+129f1f4c4e"
           }
 
           processResources {
