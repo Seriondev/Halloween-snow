@@ -52,14 +52,14 @@ jobs:
           yarn_mappings=1.21.10+build.3
           loader_version=0.17.2
           fabric_api_version=0.138.4+1.21.10
-          mod_version=1.2.0
+          mod_version=1.2.2
           maven_group=dev.footstepsnowfx
           archives_base_name=footstepsnowfx
           EOF
 
           cat > build.gradle <<'EOF'
           plugins {
-              id 'fabric-loom' version '1.11.8'
+              id 'fabric-loom' version '1.13.3'
           }
 
           version = project.mod_version
